@@ -1,0 +1,90 @@
+.form-contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    background: ivory;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: start;
+    gap: 0 1rem;
+}
+
+.form-contacts input, select {
+    min-width: 100%;
+    margin: 0 auto;
+    padding: .7rem;
+    background: ivory;
+    border: .1rem solid #DD7E1F;
+    border-radius: .4rem;
+}
+
+.form-contacts input:hover, 
+.form-contacts input:focus,
+ select:hover, select:focus {
+    background: #e7b6863b;
+    border: .1rem solid #E04714;
+}
+
+.tasks-content {
+    border: .1rem solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.ul-tasks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    min-width: 100%;
+    gap: 2rem;
+}
+
+.ul-tasks .li-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    height: 20rem;
+    background: ivory;
+    text-align: center;
+}
+
+.ul-tasks .icon {
+    font-size: 2rem;
+    color: #D48787;
+}
+
+.ul-tasks .icon:hover {
+    color: #E04714;
+}
+
+@media screen and (max-width: 1024px) {
+    .ul-tasks {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .form-contacts {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form-contacts .btn-send {
+        min-width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ul-tasks {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .form-contacts {
+        display: flex;
+        flex-direction: column;
+    }
+}

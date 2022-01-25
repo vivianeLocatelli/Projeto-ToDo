@@ -1,0 +1,175 @@
+.header {
+    max-width: 25rem;
+    height: 100vh;
+    position: fixed;
+    background: #eadabf;
+    text-align: center;
+    display: grid;
+    grid-template-rows: .5fr 1fr 2fr;
+    align-items: start;
+}
+
+.header h1 {
+    margin-top: 2rem;
+}
+
+.nav {
+    margin: 2rem 0;
+    min-width: 23rem;
+    display: block;
+}
+
+.nav a {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .8rem 2rem;
+    text-decoration: none;
+    color: #000;
+    transition: all ease-in 400ms;
+}
+
+.nav a:hover{
+    background: #dd7e1f9f ;
+    color: #000;
+}
+
+.nav a:hover .icon{
+    color: #DCF5E3;
+}
+
+.icon {
+    margin: 0 1rem;
+    color: #E04714;
+    transition: all ease-out 400ms;
+}
+
+.header img {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;  /* Utilizado pra que a imagem enviada se adapte ao tamnho passado*/
+    border-radius: 50%;
+    display: block;
+}
+
+.btn-sair {
+    margin: 1.5rem auto;
+    font-size: 1.8rem;
+    display: flex;
+    padding-right: 1rem;
+    border: .1rem solid ivory;
+    color: #000;
+    font-weight: 500;
+    background: none;
+    border-radius: .3rem;
+    transition: all ease-out 400ms;
+}
+
+.btn-sair:hover {
+    border: .1rem solid #DD7E1F;
+    background: #DD7E1F;
+    color: #fff;
+}
+
+.btn-sair:hover .icon {
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        display: block;
+        min-width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav a:hover{
+        background: none;
+    }
+    
+    .nav a:hover .icon{
+        color: #E04714;
+    }
+
+    .nav .icon{
+        color: #E04714;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .nav {
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+    }
+
+    .nav a {
+        font-size: 0;
+        padding: 0;
+    }
+
+    .nav a .icon {
+        font-size: 2rem;
+        margin: 0 1.5rem;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .btn-sair {
+        width: inherit;
+        padding: .4rem;
+        font-size: 0;
+        margin: 0;
+    }
+
+    .btn-sair .icon {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        min-height: 8rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .header h1 {
+        margin-bottom: 0;
+    }
+
+    .nav {
+        margin: .7rem 0;
+    }
+
+    .nav a {
+        flex-direction: column;
+        margin: 0 1.5rem;
+    }
+
+    .nav a .icon {
+        font-size: 1.8rem;
+        margin-bottom: .5rem;
+    }
+
+    .btn-sair {
+        border: none;
+    }
+
+}

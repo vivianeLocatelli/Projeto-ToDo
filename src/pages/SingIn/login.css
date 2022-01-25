@@ -1,0 +1,144 @@
+.login-section {
+    min-width: 100%;
+    padding-top: 8rem;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 60rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.to-do-title {
+    color: #E04714;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    font-family: 'Spartan', sans-serif;
+    font-size: 3.5rem;
+}
+
+.to-do-span {
+    color: #000;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+
+.image-content {
+    min-width: 30rem;
+    text-align: center;
+}
+
+.image-content img {
+    width: 25rem;
+}
+
+.form-content {
+    min-width: 30rem;
+    text-align: center;
+}
+
+.form-content h2 {
+    margin: 1rem 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: start;
+}
+
+.form a {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration-color: #DD7E1F;  
+}
+
+.form a:hover {
+    font-weight: 700;
+}
+
+.form label {
+    margin: 1rem 0;
+}
+
+.form input, .form label{
+    min-width: 100%;
+}
+
+.form input {
+    margin-top: .1rem;
+    padding: .5rem;
+    border: .1rem solid #DD7E1F;
+    border-radius: .4rem;
+}
+
+.form input:hover, .form input:focus {
+    background: #dd7e1f23;
+}
+
+.btn {
+    margin: 1rem;
+    padding: .6rem;
+    font-weight: 700;
+    border: .1rem solid #DD7E1F;
+    background: #dd7e1f23;
+    color: #DD7E1F;
+    border-radius: .3rem;
+    transition: all 600ms ease-in-out;
+}
+
+.btn:hover, .form .btn:focus {
+    border: .1rem solid #DD7E1F;
+    background: #DD7E1F;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .login-section {
+        padding-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .image-content img {
+        width: 20rem;
+    }
+
+    .main-content {
+        max-width: 36rem;
+    }
+
+    .form-content {
+        min-width: 16rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login-section {
+        padding-top: 10rem;
+    }
+
+    .main-content {
+        max-width: 26rem;
+    }
+
+    .image-content img {
+        width: 16rem;
+    }
+}

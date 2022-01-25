@@ -1,0 +1,160 @@
+.tasks-container {
+    padding: 2rem;
+}
+
+.form-task {
+    display: grid;
+    gap: 1rem 2rem;
+    padding: 1rem;
+    background: ivory;
+    border-radius: 1rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-task label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.form-task input {
+    width: 100%;
+    display: flex;
+    padding: .5rem;
+    margin-left: 1rem;
+    background: ivory;
+    border: .1rem solid #DD7E1F;
+    border-radius: .4rem;
+}
+
+.form-task input:hover, 
+.form-task input:focus {
+    background: #e7b6863b;
+    border: .1rem solid #E04714;
+}
+
+.select-tasks{
+    width: 100%;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.form-task .btn-send {
+    margin: 0;
+    min-width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.btn-send {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.btn-icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.delete, .edit {
+    min-height: 100%;
+}
+
+.delete {
+    color: #E04714;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+.edit {
+    color: #31849E;
+    font-size: 2rem;
+}
+
+.delete:hover {
+    background: #E04714;
+    color: white;
+    font-size: 2rem;
+}
+
+.edit:hover {
+    background: #31849E;
+    color: white;
+}
+
+.li-tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    height: 30rem;
+    background: ivory;
+    text-align: center;
+}
+
+.btn-li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.li-tasks li {
+    line-height: 3rem;
+}
+
+.btn-dash {
+    margin: 1rem;
+    padding: .4rem;
+    font-weight: 700;
+    border: .1rem solid #DD7E1F;
+    background: #da8632da;
+    color: #fff;
+    border-radius: .3rem;
+    transition: all 600ms ease-in-out;
+} 
+
+.btn-dash:hover, .btn-dash:focus {
+    border: .1rem solid #E04714;
+    background: #db8229;
+    color: #fff;
+}
+
+.example {
+    color: #4b4848;
+}
+
+@media screen and (max-width: 1024px) {
+    .form-task {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;    
+    }
+
+    .form-task .btn-send {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tasks-container {
+        padding-top: 7rem;
+    }
+
+    .form-task {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .tasks-container {
+        padding-top: 9rem;
+    }
+}
